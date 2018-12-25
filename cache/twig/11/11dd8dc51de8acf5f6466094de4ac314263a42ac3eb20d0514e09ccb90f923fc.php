@@ -99,10 +99,10 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
         echo ($context["theme_url"] ?? null);
         echo "/images/favicon.png\" />
         <!--[if IE]> <script> (function() { var html5 = (\"abbr,article,aside,audio,canvas,datalist,details,\" + \"figure,footer,header,hgroup,mark,menu,meter,nav,output,\" + \"progress,section,time,video\").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
-        <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'/>
         <link href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' rel='stylesheet'/>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700&ver=4.2.2' id='roboto-slab-css' media='all' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700&ver=4.2.2' id='roboto-slab-css' media='all' rel='stylesheet' type='text/css'/>
         <meta name=\"google-translate-customization\" content=\"";
         // line 16
         echo $this->getAttribute(($context["site"] ?? null), "google_translate_token", array());
@@ -264,10 +264,10 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">
         <link rel=\"icon\" type=\"image/png\" href=\"{{ theme_url }}/images/favicon.png\" />
         <!--[if IE]> <script> (function() { var html5 = (\"abbr,article,aside,audio,canvas,datalist,details,\" + \"figure,footer,header,hgroup,mark,menu,meter,nav,output,\" + \"progress,section,time,video\").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
-        <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'/>
         <link href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' rel='stylesheet'/>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700&ver=4.2.2' id='roboto-slab-css' media='all' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700&ver=4.2.2' id='roboto-slab-css' media='all' rel='stylesheet' type='text/css'/>
         <meta name=\"google-translate-customization\" content=\"{{ site.google_translate_token }}\">
         {% block stylesheets %}
             {% do assets.addCss('theme://css/widget.css') %}
