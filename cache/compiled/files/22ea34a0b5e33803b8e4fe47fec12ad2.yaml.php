@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-skeleton/user/config/system.yaml',
-    'modified' => 1544768180,
+    'modified' => 1545724702,
     'data' => [
         'home' => [
             'alias' => '/blog'

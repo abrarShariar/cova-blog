@@ -1,10 +1,14 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1545716064,
-    'checksum' => '34e009f08e4b16b2b742421b6c03a7cd',
+    'timestamp' => 1545728320,
+    'checksum' => '92f4c3fde23eb45e5bcc97386eaacc61',
     'files' => [
         'user/config' => [
+            'media' => [
+                'file' => 'user/config/media.yaml',
+                'modified' => 1545725904
+            ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
                 'modified' => 1544768180
@@ -25,9 +29,13 @@ return [
                 'file' => 'user/config/site.yaml',
                 'modified' => 1544768180
             ],
+            'streams' => [
+                'file' => 'user/config/streams.yaml',
+                'modified' => 1545725904
+            ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1544768180
+                'modified' => 1545724702
             ]
         ],
         'system/config' => [
@@ -73,6 +81,10 @@ return [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
                 'modified' => 1544768186
             ],
+            'plugins/admin' => [
+                'file' => 'user/plugins/admin/admin.yaml',
+                'modified' => 1545724702
+            ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1544768186
@@ -88,6 +100,10 @@ return [
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
                 'modified' => 1544768182
+            ],
+            'plugins/login' => [
+                'file' => 'user/plugins/login/login.yaml',
+                'modified' => 1545724648
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
@@ -279,6 +295,65 @@ return [
                     'dir' => 'desc'
                 ]
             ],
+            'admin' => [
+                'enabled' => true,
+                'route' => '/admin',
+                'cache_enabled' => false,
+                'theme' => 'grav',
+                'logo_text' => '',
+                'body_classes' => '',
+                'content_padding' => true,
+                'twofa_enabled' => true,
+                'sidebar' => [
+                    'activate' => 'tab',
+                    'hover_delay' => 100,
+                    'size' => 'auto'
+                ],
+                'dashboard' => [
+                    'days_of_stats' => 7
+                ],
+                'widgets' => [
+                    'dashboard-maintenance' => true,
+                    'dashboard-statistics' => true,
+                    'dashboard-notifications' => true,
+                    'dashboard-feed' => true,
+                    'dashboard-pages' => true
+                ],
+                'pages' => [
+                    'show_parents' => 'both'
+                ],
+                'session' => [
+                    'timeout' => 1800
+                ],
+                'warnings' => [
+                    'delete_page' => true
+                ],
+                'edit_mode' => 'normal',
+                'frontend_preview_target' => 'inline',
+                'show_github_msg' => true,
+                'pages_list_display_field' => 'title',
+                'google_fonts' => false,
+                'admin_icons' => 'line-awesome',
+                'enable_auto_updates_check' => true,
+                'notifications' => [
+                    'feed' => true,
+                    'dashboard' => true,
+                    'plugins' => true,
+                    'themes' => true
+                ],
+                'popularity' => [
+                    'enabled' => true,
+                    'ignore' => [
+                        0 => '/test*',
+                        1 => '/modular'
+                    ],
+                    'history' => [
+                        'daily' => 30,
+                        'monthly' => 12,
+                        'visitors' => 20
+                    ]
+                ]
+            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
@@ -314,6 +389,61 @@ return [
                 'enabled' => true,
                 'routes' => [
                     404 => '/error'
+                ]
+            ],
+            'login' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'route' => NULL,
+                'redirect_to_login' => true,
+                'redirect_after_login' => NULL,
+                'redirect_after_logout' => '/',
+                'route_activate' => '/activate_user',
+                'route_forgot' => '/forgot_password',
+                'route_reset' => '/reset_password',
+                'route_profile' => '/user_profile',
+                'route_register' => '/user_register',
+                'route_unauthorized' => '/user_unauthorized',
+                'dynamic_page_visibility' => false,
+                'parent_acl' => false,
+                'protect_protected_page_media' => false,
+                'rememberme' => [
+                    'enabled' => true,
+                    'timeout' => 604800,
+                    'name' => 'grav-rememberme'
+                ],
+                'max_pw_resets_count' => 0,
+                'max_pw_resets_interval' => 60,
+                'max_login_count' => 0,
+                'max_login_interval' => 2,
+                'user_registration' => [
+                    'enabled' => false,
+                    'fields' => [
+                        0 => 'username',
+                        1 => 'password',
+                        2 => 'email',
+                        3 => 'fullname',
+                        4 => 'title',
+                        5 => 'level'
+                    ],
+                    'default_values' => [
+                        'level' => 'Newbie'
+                    ],
+                    'access' => [
+                        'site' => [
+                            'login' => 'true'
+                        ]
+                    ],
+                    'redirect_after_registration' => '',
+                    'options' => [
+                        'validate_password1_and_password2' => true,
+                        'set_user_disabled' => false,
+                        'login_after_registration' => false,
+                        'send_activation_email' => false,
+                        'manually_enable' => false,
+                        'send_notification_email' => false,
+                        'send_welcome_email' => false
+                    ]
                 ]
             ],
             'email' => [
