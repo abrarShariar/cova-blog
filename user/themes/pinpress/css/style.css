@@ -903,7 +903,7 @@ margin: 0;
 .container:before,.container:after{display:table;content:"";line-height:0}
 .container:after{clear:both}
 #header{margin-right:30px;float:left}
-#header,#header a{color:#E74C3C}
+#header,#header a{color:#0097a7}
 #header h1{  line-height: 20px;
 margin-top: 30px;
 font-size: 35px;
@@ -1056,15 +1056,15 @@ border-radius: 1px 1px 1px 1px;
 box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
 padding: 8px;}
 .pagenavi > *{font-size:18px;margin-right:10px;padding:2px 13px;display:inline-block}
-.pagenavi a,.pagenavi span{color: #F69087;
-border: 1px solid #f35353;
+.pagenavi a,.pagenavi span{color: #0097a7;
+border: 1px solid #0097a7;
 text-decoration: none;
 -webkit-transition: all .1s ease-in-out;
 -moz-transition: all .1s ease-in-out;
 -o-transition: all .1s ease-in-out;
 transition: all .1s ease-in-out;}
 .pagenavi .current{color:#525252}
-.pagenavi > a:hover{background:#f35353;color:#fff}
+.pagenavi > a:hover{background:#0097a7;color:#fff}
 .Image img{max-width:300px;height:auto}
 #PopularPosts1 img{float:left;margin:0 20px 0 0;display:block;height:70px;position:relative;width:70px;padding:0;
 width: 80px;

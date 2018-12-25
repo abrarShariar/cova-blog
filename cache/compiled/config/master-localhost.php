@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1545728320,
-    'checksum' => '92f4c3fde23eb45e5bcc97386eaacc61',
+    'timestamp' => 1545751900,
+    'checksum' => 'd90d93c12a949ecd49cf63d27f8ed7c3',
     'files' => [
         'user/config' => [
             'media' => [
@@ -27,7 +27,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1544768180
+                'modified' => 1545751899
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -810,7 +810,7 @@ return [
             'salt' => 'jfZ1lLWxi0Arnq'
         ],
         'site' => [
-            'title' => 'PinPress',
+            'title' => 'Covalent blog',
             'default_lang' => 'en',
             'author' => [
                 'name' => 'Grav',
@@ -845,8 +845,7 @@ return [
                     'url' => 'error',
                     'text' => 'Error Page'
                 ]
-            ],
-            'copyright' => 'Created By <a href="http://www.soratemplates.com/" rel="dofollow" target="_blank" title="Blogger Templates">Sora Templates</a> and <a href="http://mybloggerthemes.com/" rel="dofollow" target="_blank" title="Blogger Templates">My Blogger Themes</a> , Ported By <a href="http://www.getgrav.org" rel="dofollow" target="_blank" title="Grav">Grav Team</a>'
+            ]
         ],
         'streams' => [
             'schemes' => [

@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-skeleton/user/config/site.yaml',
-    'modified' => 1544768180,
+    'modified' => 1545751899,
     'data' => [
-        'title' => 'PinPress',
+        'title' => 'Covalent blog',
         'description' => 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
         'author' => [
             'name' => 'Grav',
@@ -30,7 +30,6 @@ return [
                 'url' => 'error',
                 'text' => 'Error Page'
             ]
-        ],
-        'copyright' => 'Created By <a href="http://www.soratemplates.com/" rel="dofollow" target="_blank" title="Blogger Templates">Sora Templates</a> and <a href="http://mybloggerthemes.com/" rel="dofollow" target="_blank" title="Blogger Templates">My Blogger Themes</a> , Ported By <a href="http://www.getgrav.org" rel="dofollow" target="_blank" title="Grav">Grav Team</a>'
+        ]
     ]
 ];
