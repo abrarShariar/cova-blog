@@ -21,8 +21,9 @@
 }
 
 .widget-about-img {
-  border-color: #d82425;
-  border-radius: 50%;
+  /* border-color: #d82425;
+  border-radius: 50%; */
+  border:none
 }
 
 .widget-about-img img {
@@ -31,7 +32,7 @@
   width: 100px;
 }
 
-.widget-about-img{height:100px;width:100px;border-width:4px;border-style:solid;overflow:hidden;margin:15px
+.widget-about-img{height:100px;width:100px;overflow:hidden;margin:15px
   auto 30px}.widget-about{text-align:center}.widget-about
   h3{font-size:16px;margin-bottom:20px;text-transform:uppercase;color:#fff}.widget-about
   p{color:#f6f6f6;font-size:13px}.widget-about .social-ul{float:none}.widget-about .social-ul

@@ -3,7 +3,7 @@ taxonomy:
     category: sidebar
 css_suffix: widget-about
 surround: authorzo
-image: about.png
+image: cova-geometric-logo.png
 social:
   - icon: twitter
     url: "https://twitter.com/covatoken"
@@ -11,10 +11,6 @@ social:
     url: "https://github.com/covalent-hq"
   - icon: reddit
     url: "https://www.reddit.com/r/Covalent_Official/"
-  - icon: telegram
-    url: "#"
-  - icon: fab fa-medium
-    url: "#"
 
 ---
 
