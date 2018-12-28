@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1545724708,
-    'checksum' => '838ae7aff6b58236ae5dc5e254408708',
+    'timestamp' => 1545897986,
+    'checksum' => 'fdcc47cb4420716128dd8b287c3268fb',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -58,6 +58,10 @@ return [
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/blueprints.yaml',
                 'modified' => 1544768180
+            ],
+            'plugins/markdown-fontawesome' => [
+                'file' => 'user/plugins/markdown-fontawesome/blueprints.yaml',
+                'modified' => 1461702180
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/blueprints.yaml',
@@ -3534,6 +3538,28 @@ return [
                 'name' => 'plugins.archives.filter_combinator',
                 'validation' => 'strict'
             ],
+            'plugins.markdown-fontawesome' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.markdown-fontawesome.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.markdown-fontawesome.enabled',
+                'validation' => 'strict'
+            ],
             'plugins.feed' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -4728,6 +4754,9 @@ return [
                         'category' => 'plugins.archives.filters.category'
                     ],
                     'filter_combinator' => 'plugins.archives.filter_combinator'
+                ],
+                'markdown-fontawesome' => [
+                    'enabled' => 'plugins.markdown-fontawesome.enabled'
                 ],
                 'feed' => [
                     'enabled' => 'plugins.feed.enabled',

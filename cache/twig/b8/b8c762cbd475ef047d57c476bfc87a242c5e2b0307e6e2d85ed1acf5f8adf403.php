@@ -261,6 +261,6 @@ class __TwigTemplate_888f0e868abe2f40682f1bf9134126757e974d35821703820a725c1a82c
         <li>{% include 'partials/login-status.html.twig' %}</li>
     {% endif %}
 </ul>
-", "partials/navigation.html.twig", "/Applications/MAMP/htdocs/grav-skeleton/user/themes/pinpress/templates/partials/navigation.html.twig");
+", "partials/navigation.html.twig", "/Applications/MAMP/htdocs/cova-blog/user/themes/pinpress/templates/partials/navigation.html.twig");
     }
 }

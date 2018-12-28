@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1545751900,
-    'checksum' => 'd90d93c12a949ecd49cf63d27f8ed7c3',
+    'timestamp' => 1545999066,
+    'checksum' => '64d1cb06a1814b86bb334a4d26c173d4',
     'files' => [
         'user/config' => [
             'media' => [
@@ -27,7 +27,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1545751899
+                'modified' => 1545999065
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -92,6 +92,10 @@ return [
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/archives.yaml',
                 'modified' => 1544768180
+            ],
+            'plugins/markdown-fontawesome' => [
+                'file' => 'user/plugins/markdown-fontawesome/markdown-fontawesome.yaml',
+                'modified' => 1461702180
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
@@ -376,6 +380,9 @@ return [
                     'month' => 'archives_month',
                     'year' => 'archives_year'
                 ]
+            ],
+            'markdown-fontawesome' => [
+                'enabled' => true
             ],
             'feed' => [
                 'enabled' => true,
@@ -810,7 +817,7 @@ return [
             'salt' => 'jfZ1lLWxi0Arnq'
         ],
         'site' => [
-            'title' => 'Covalent blog',
+            'title' => 'COVA Official Blog',
             'default_lang' => 'en',
             'author' => [
                 'name' => 'Grav',
@@ -839,13 +846,7 @@ return [
             'blog' => [
                 'route' => ''
             ],
-            'description' => 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
-            'menu' => [
-                0 => [
-                    'url' => 'error',
-                    'text' => 'Error Page'
-                ]
-            ]
+            'description' => 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'
         ],
         'streams' => [
             'schemes' => [

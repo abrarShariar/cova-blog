@@ -47,7 +47,7 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
     ";
         // line 5
         $this->displayBlock('head', $context, $blocks);
-        // line 47
+        // line 48
         echo "</head>
 <body>
   <div class=\"firstload-background\">
@@ -56,19 +56,19 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
 
   <div class=\"site\" id=\"page\">
     ";
-        // line 54
+        // line 55
         $this->displayBlock('header', $context, $blocks);
-        // line 57
+        // line 58
         echo "    <div class=\"clear\"></div>
     ";
-        // line 58
+        // line 59
         $this->displayBlock('body', $context, $blocks);
-        // line 65
+        // line 66
         echo "
     ";
-        // line 66
+        // line 67
         $this->displayBlock('footer', $context, $blocks);
-        // line 69
+        // line 70
         echo "  </div>
 
     </body>
@@ -83,10 +83,6 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
         echo "        <meta charset=\"utf-8\" />
         <title>";
         // line 7
-        if ($this->getAttribute(($context["header"] ?? null), "title", array())) {
-            echo $this->getAttribute(($context["header"] ?? null), "title", array());
-            echo " | ";
-        }
         echo $this->getAttribute(($context["site"] ?? null), "title", array());
         echo "</title>
         ";
@@ -94,31 +90,32 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
         $this->loadTemplate("partials/metadata.html.twig", "partials/base.html.twig", 8)->display($context);
         // line 9
         echo "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">
-        <link rel=\"icon\" type=\"image/png\" href=\"";
-        // line 10
+        <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"https://cdn0.covalent.ai/cova_assets_v3/images/favicon.png\">
+        <!-- <link rel=\"icon\" type=\"image/png\" href=\"";
+        // line 11
         echo ($context["theme_url"] ?? null);
-        echo "/images/favicon.png\" />
+        echo "/images/favicon.png\" /> -->
         <!--[if IE]> <script> (function() { var html5 = (\"abbr,article,aside,audio,canvas,datalist,details,\" + \"figure,footer,header,hgroup,mark,menu,meter,nav,output,\" + \"progress,section,time,video\").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
         <link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'/>
         <link href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' rel='stylesheet'/>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700&ver=4.2.2' id='roboto-slab-css' media='all' rel='stylesheet' type='text/css'/>
         <meta name=\"google-translate-customization\" content=\"";
-        // line 16
+        // line 17
         echo $this->getAttribute(($context["site"] ?? null), "google_translate_token", array());
         echo "\">
         ";
-        // line 17
+        // line 18
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 27
+        // line 28
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "css", array(), "method");
         echo "
 
         ";
-        // line 29
+        // line 30
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 34
+        // line 35
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(), "method");
         echo "
@@ -130,101 +127,101 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
         </script>
 
         ";
-        // line 42
+        // line 43
         if (((($this->getAttribute(($context["browser"] ?? null), "getBrowser", array()) == "msie") && ($this->getAttribute(($context["browser"] ?? null), "getVersion", array()) >= 8)) && ($this->getAttribute(($context["browser"] ?? null), "getVersion", array()) <= 9))) {
-            // line 43
+            // line 44
             echo "            <script src=\"//html5shiv.googlecode.com/svn/trunk/html5.js\"></script>
         ";
         }
-        // line 45
+        // line 46
         echo "
     ";
     }
 
-    // line 17
+    // line 18
     public function block_stylesheets($context, array $blocks = array())
     {
-        // line 18
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/widget.css"), "method");
         // line 19
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/style.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/widget.css"), "method");
         // line 20
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/content.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/style.css"), "method");
         // line 21
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/sidebar.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/content.css"), "method");
         // line 22
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/lightbox.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/sidebar.css"), "method");
         // line 23
         echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/lightbox.css"), "method");
+        // line 24
+        echo "            ";
         if (((($this->getAttribute(($context["browser"] ?? null), "getBrowser", array()) == "msie") && ($this->getAttribute(($context["browser"] ?? null), "getVersion", array()) >= 7)) && ($this->getAttribute(($context["browser"] ?? null), "getVersion", array()) <= 8))) {
-            // line 24
+            // line 25
             echo "                ";
             $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/ie.css"), "method");
-            // line 25
+            // line 26
             echo "            ";
         }
-        // line 26
+        // line 27
         echo "        ";
     }
 
-    // line 29
+    // line 30
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 30
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "add", array(0 => "jquery", 1 => 101), "method");
         // line 31
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "add", array(0 => "theme://js/scripts.js"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "add", array(0 => "jquery", 1 => 101), "method");
         // line 32
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "add", array(0 => "theme://js/video.js"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "add", array(0 => "theme://js/scripts.js"), "method");
         // line 33
+        echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "add", array(0 => "theme://js/video.js"), "method");
+        // line 34
         echo "        ";
     }
 
-    // line 54
+    // line 55
     public function block_header($context, array $blocks = array())
     {
-        // line 55
-        echo "      ";
-        $this->loadTemplate("partials/header.html.twig", "partials/base.html.twig", 55)->display($context);
         // line 56
+        echo "      ";
+        $this->loadTemplate("partials/header.html.twig", "partials/base.html.twig", 56)->display($context);
+        // line 57
         echo "    ";
     }
 
-    // line 58
+    // line 59
     public function block_body($context, array $blocks = array())
     {
-        // line 59
+        // line 60
         echo "    <div class='container' id=\"content-wrapper\">
       <div class=\"row\" id=\"primary\">
       ";
-        // line 61
-        $this->displayBlock('content', $context, $blocks);
         // line 62
+        $this->displayBlock('content', $context, $blocks);
+        // line 63
         echo "    </div>
     </div>
     ";
     }
 
-    // line 61
+    // line 62
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 66
+    // line 67
     public function block_footer($context, array $blocks = array())
     {
-        // line 67
-        echo "      ";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 67)->display($context);
         // line 68
+        echo "      ";
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 68)->display($context);
+        // line 69
         echo "    ";
     }
 
@@ -240,7 +237,7 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
 
     public function getDebugInfo()
     {
-        return array (  228 => 68,  225 => 67,  222 => 66,  217 => 61,  211 => 62,  209 => 61,  205 => 59,  202 => 58,  198 => 56,  195 => 55,  192 => 54,  188 => 33,  185 => 32,  182 => 31,  179 => 30,  176 => 29,  172 => 26,  169 => 25,  166 => 24,  163 => 23,  160 => 22,  157 => 21,  154 => 20,  151 => 19,  148 => 18,  145 => 17,  140 => 45,  136 => 43,  134 => 42,  122 => 34,  120 => 29,  114 => 27,  112 => 17,  108 => 16,  99 => 10,  96 => 9,  94 => 8,  86 => 7,  83 => 6,  80 => 5,  72 => 69,  70 => 66,  67 => 65,  65 => 58,  62 => 57,  60 => 54,  51 => 47,  49 => 5,  31 => 3,  28 => 2,  26 => 1,);
+        return array (  225 => 69,  222 => 68,  219 => 67,  214 => 62,  208 => 63,  206 => 62,  202 => 60,  199 => 59,  195 => 57,  192 => 56,  189 => 55,  185 => 34,  182 => 33,  179 => 32,  176 => 31,  173 => 30,  169 => 27,  166 => 26,  163 => 25,  160 => 24,  157 => 23,  154 => 22,  151 => 21,  148 => 20,  145 => 19,  142 => 18,  137 => 46,  133 => 44,  131 => 43,  119 => 35,  117 => 30,  111 => 28,  109 => 18,  105 => 17,  96 => 11,  92 => 9,  90 => 8,  86 => 7,  83 => 6,  80 => 5,  72 => 70,  70 => 67,  67 => 66,  65 => 59,  62 => 58,  60 => 55,  51 => 48,  49 => 5,  31 => 3,  28 => 2,  26 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -259,10 +256,11 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
 <head>
     {% block head %}
         <meta charset=\"utf-8\" />
-        <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
+        <title>{{ site.title }}</title>
         {% include 'partials/metadata.html.twig' %}
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">
-        <link rel=\"icon\" type=\"image/png\" href=\"{{ theme_url }}/images/favicon.png\" />
+        <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"https://cdn0.covalent.ai/cova_assets_v3/images/favicon.png\">
+        <!-- <link rel=\"icon\" type=\"image/png\" href=\"{{ theme_url }}/images/favicon.png\" /> -->
         <!--[if IE]> <script> (function() { var html5 = (\"abbr,article,aside,audio,canvas,datalist,details,\" + \"figure,footer,header,hgroup,mark,menu,meter,nav,output,\" + \"progress,section,time,video\").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
         <link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'/>
@@ -325,6 +323,6 @@ class __TwigTemplate_84eae42c600af1189a2888ff15f8b60be3fcac39eb1dd876ebd31d5e1b4
 
     </body>
     </html>
-", "partials/base.html.twig", "/Applications/MAMP/htdocs/grav-skeleton/user/themes/pinpress/templates/partials/base.html.twig");
+", "partials/base.html.twig", "/Applications/MAMP/htdocs/cova-blog/user/themes/pinpress/templates/partials/base.html.twig");
     }
 }
