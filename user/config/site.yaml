@@ -1,0 +1,21 @@
+title: COVA Official Blog
+description: "COVA: Smart Contract for Data"
+author:
+  name: COVA
+  email: 'admin@covalent.ai'
+  url:
+  logo:
+  gravatar:
+  description: "COVA: Smart Contract for Data'"
+blog:
+  route: ''
+metadata:
+    description: 'COVA: Smart Contract for Data'
+taxonomies: [category,tag,month]
+
+# menu:
+#   - url: error
+#     text: Error Page
+
+# Copyright
+# copyright: Created By <a href="http://www.soratemplates.com/" rel="dofollow" target="_blank" title="Blogger Templates">Sora Templates</a> and <a href="http://mybloggerthemes.com/" rel="dofollow" target="_blank" title="Blogger Templates">My Blogger Themes</a> , Ported By <a href="http://www.getgrav.org" rel="dofollow" target="_blank" title="Grav">Grav Team</a>

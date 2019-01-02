@@ -1,0 +1,11 @@
+email: tarik@covalent.ai
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Tarik Moon'
+title: Admin
+state: enabled
+hashed_password: $2y$10$YLoPsYDY6mBaEvil1p5BtuaZwK5W2FcfCNU0oiAmmQJijX70qJajO
